@@ -1,4 +1,4 @@
-# NodeJS Sample Project
+# Laravel + Filament + Livewire Sample Project
 
 This is a simple Laravel + Filament + Livewire application with admin panel and livewire frontend .
 
