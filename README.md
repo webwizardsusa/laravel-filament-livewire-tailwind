@@ -42,6 +42,9 @@ You can create a new user account with the following command:
 php artisan make:filament-user
 ```
 
+Note :
+    If incase can't create the user then kindly use the database file from 'database/new_lflt.sql'
+
 ## Run server
 
 Run server using this command-
