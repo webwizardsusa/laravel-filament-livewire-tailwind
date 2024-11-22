@@ -7,7 +7,7 @@
                 <a href="index.html" class="lg:hidden">
                     <img src="{{ asset('/assets/images/banter-icon-logo.png') }}" class="h-9 w-auto" />
                 </a>
-                <a href="index.html" class="hidden lg:block">
+                <a href="{{ url('/') }}" class="hidden lg:block">
                     <img src="{{ asset('/assets/images/banter-logo.png') }}" class="h-9 w-auto" />
                 </a>
             </div>
