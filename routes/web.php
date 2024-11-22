@@ -8,5 +8,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages.userlist');
 // });
 
-Route::get('/user', User::class);
+Route::get('/', User::class);
 Route::get('/registration', UserRegistration::class);

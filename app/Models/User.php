@@ -64,4 +64,16 @@ class User extends Authenticatable
             }
         });
     }
+
+    public function scopeSearch($query, $searchTerm)
+    {
+        // return $query->when($searchTerm, function ($query) use ($searchTerm) {
+        //     return $query->where('name', 'like', '%' . $searchTerm . '%');
+        // });
+
+        return $query->where('status', 'active') // Filter by active status
+            ->when($searchTerm, function ($query) use ($searchTerm) {
+                return $query->where('name', 'like', '%' . $searchTerm . '%'); // Search by name
+            });
+    }
 }

@@ -7,11 +7,11 @@ use Livewire\Component;
 
 class User extends Component
 {
-    public $users;
+    public $search = '';
 
     public function render()
     {
-        $this->users = ModelsUser::where('status','active')->get();
-        return view('livewire.user');
+        $users = ModelsUser::search($this->search)->get();
+        return view('livewire.user', ['users' => $users]);
     }
 }
